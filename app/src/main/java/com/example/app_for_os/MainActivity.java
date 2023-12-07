@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        calBtn.setOnClickListener(new View.OnClickListener() {
+        calBtn.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
+            public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(),Calculator.class);
                 startActivity(intent);
             }
@@ -44,3 +44,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+

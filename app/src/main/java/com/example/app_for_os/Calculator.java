@@ -2,7 +2,6 @@ package com.example.app_for_os;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,11 +16,10 @@ public class Calculator extends AppCompatActivity {
     String num1, num2;
     Integer result;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.calculator);
         setTitle("초간단 계산기");
 
         edit1 = (EditText) findViewById(R.id.Edit1);
