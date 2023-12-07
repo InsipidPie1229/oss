@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button catBtn, dogBtn, foxBtn, emrBtn;
+        Button catBtn, dogBtn, foxBtn, emrBtn, calBtn;
 
         ImageView catImg;
 
@@ -24,10 +24,9 @@ public class MainActivity extends AppCompatActivity {
         dogBtn = (Button) findViewById(R.id.dogBtn);
         foxBtn = (Button) findViewById(R.id.foxBtn);
         emrBtn = (Button) findViewById(R.id.emrBtn);
+        calBtn = (Button) findViewById(R.id.calBtn);
         
         catImg = (ImageView) findViewById(R.id.catImg);
-
-        calBtn = (Button) findViewById(R.id.calBtn);
 
         catBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        calBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(),Calculator.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
 

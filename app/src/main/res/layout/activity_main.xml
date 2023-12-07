@@ -35,4 +35,10 @@
         android:id="@+id/emrBtn"
         android:text="응급전화" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calBtn"
+        android:text="계산기" />
+
 </LinearLayout>
