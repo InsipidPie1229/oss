@@ -62,6 +62,14 @@
         android:layout_margin="6dp"
         android:text="나머지 값" />
 
+    <Button
+        android:id="@+id/BtnCat"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="고양이로 돌아가기" />
+
     <TextView
         android:id="@+id/TextResult"
         android:layout_weight="1"
@@ -71,5 +79,6 @@
         android:text="계산 결과 : "
         android:textColor="#FF0000"
         android:textSize="30dp" />
+
 
 </LinearLayout>

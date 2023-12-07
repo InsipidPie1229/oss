@@ -2,6 +2,7 @@ package com.example.app_for_os;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 
 public class Calculator extends AppCompatActivity {
     EditText edit1, edit2;
-    Button btnAdd, btnSub, btnMul, btnDiv, btnRem;
+    Button btnAdd, btnSub, btnMul, btnDiv, btnRem, btnCat;
     TextView textResult;
     String num1, num2;
     Double result;
@@ -31,6 +32,8 @@ public class Calculator extends AppCompatActivity {
         btnMul = (Button) findViewById(R.id.BtnMul);
         btnDiv = (Button) findViewById(R.id.BtnDiv);
         btnRem = (Button) findViewById(R.id.BtnRem);
+
+        btnCat = (Button) findViewById(R.id.BtnCat);
 
         textResult = (TextView) findViewById(R.id.TextResult);
 
@@ -132,6 +135,15 @@ public class Calculator extends AppCompatActivity {
 
             }
         });
+
+        btnCat.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
