@@ -14,10 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button catBtn;
+        Button catBtn, dogBtn, foxBtn;
         ImageView catImg;
 
         catBtn = (Button) findViewById(R.id.catBtn);
+        dogBtn = (Button) findViewById(R.id.dogBtn);
+        foxBtn = (Button) findViewById(R.id.foxBtn);
         catImg = (ImageView) findViewById(R.id.catImg);
 
         catBtn.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +28,26 @@ public class MainActivity extends AppCompatActivity {
 
                 catImg.setVisibility(View.VISIBLE);
                 catImg.setImageResource(R.drawable.cat);
+
+            }
+        });
+
+        catBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                catImg.setVisibility(View.VISIBLE);
+                catImg.setImageResource(R.drawable.dog);
+
+            }
+        });
+
+        catBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                catImg.setVisibility(View.VISIBLE);
+                catImg.setImageResource(R.drawable.fox);
 
             }
         });
