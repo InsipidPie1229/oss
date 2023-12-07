@@ -16,4 +16,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/catImg" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calBtn"
+        android:text="계산기" />
 </LinearLayout>
