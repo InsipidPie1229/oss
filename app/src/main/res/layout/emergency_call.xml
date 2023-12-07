@@ -1,6 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnPol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="경찰 전화 걸기" />
+
+    <Button
+        android:id="@+id/btn119"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="응급전화 걸기" />
+
+    <Button
+        android:id="@+id/btnCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="고양이로 돌아가기" />
+
+
+</LinearLayout>
