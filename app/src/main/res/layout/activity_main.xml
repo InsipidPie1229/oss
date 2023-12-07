@@ -11,6 +11,19 @@
         android:id="@+id/catBtn"
         android:text="고양이" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dogBtn"
+        android:text="강아지" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foxBtn"
+        android:text="여우" />
+
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
