@@ -16,4 +16,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/catImg" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emrBtn"
+        android:text="응급전화" />
+
 </LinearLayout>
