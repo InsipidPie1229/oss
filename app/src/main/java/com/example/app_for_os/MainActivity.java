@@ -15,7 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Button catBtn, dogBtn, foxBtn, emrBtn;
+
         ImageView catImg;
 
         catBtn = (Button) findViewById(R.id.catBtn);
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         emrBtn = (Button) findViewById(R.id.emrBtn);
         
         catImg = (ImageView) findViewById(R.id.catImg);
+
+        calBtn = (Button) findViewById(R.id.calBtn);
 
         catBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,3 +69,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+

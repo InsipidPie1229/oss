@@ -25,7 +25,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity android:name="emergency_call"/>
+
+        <activity android:name=".Calculator" />
     </application>
 
 </manifest>
