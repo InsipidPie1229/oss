@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        catBtn.setOnClickListener(new View.OnClickListener() {
+        dogBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        catBtn.setOnClickListener(new View.OnClickListener() {
+        foxBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
