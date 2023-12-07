@@ -15,15 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        HEAD
-        Button catBtn, dogBtn, foxBtn;
+        Button catBtn, dogBtn, foxBtn, emrBtn;
         ImageView catImg;
 
         catBtn = (Button) findViewById(R.id.catBtn);
         dogBtn = (Button) findViewById(R.id.dogBtn);
         foxBtn = (Button) findViewById(R.id.foxBtn);
-
-        emergency_call
+        emrBtn = (Button) findViewById(R.id.emrBtn);
+        
         catImg = (ImageView) findViewById(R.id.catImg);
 
         catBtn.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        HEAD
         dogBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -58,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        emergency_call
-
+        emrBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), emergency_call.class);
